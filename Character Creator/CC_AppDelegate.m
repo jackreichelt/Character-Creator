@@ -49,17 +49,7 @@
 }
 
 - (IBAction)debugButton:(id)sender {
-    NSLog(@"%@ ", character.name);
-    NSLog(@"%@ ", character.alias);
-    NSLog(@"%@ ", character.metatype);
-    NSLog(@"%@ ", character.age);
-    NSLog(@"%@ ", character.sex);
-    NSLog(@"%@ ", character.totalKarma);
-    NSLog(@"%@ ", character.currentKarma);
-    NSLog(@"%@ ", character.lifestyle);
-    NSLog(@"%@ ", character.streetCred);
-    NSLog(@"%@ ", character.notoriety);
-    NSLog(@"%@ ", character.publicAwareness);
+    [character description];
 }
 
 - (IBAction)nameUpdate:(id)sender {

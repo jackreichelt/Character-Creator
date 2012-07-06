@@ -3813,14 +3813,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">ageUpdage:</string>
-						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="430667654"/>
-					</object>
-					<int key="connectionID">993</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
 						<string key="label">sexUpdate:</string>
 						<reference key="source" ref="976324537"/>
 						<reference key="destination" ref="939060724"/>
@@ -3890,6 +3882,14 @@
 						<reference key="destination" ref="1046456340"/>
 					</object>
 					<int key="connectionID">1012</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">ageUpdate:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="430667654"/>
+					</object>
+					<int key="connectionID">1013</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -9939,7 +9939,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">1012</int>
+			<int key="maxID">1013</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

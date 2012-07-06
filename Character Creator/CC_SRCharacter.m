@@ -25,7 +25,19 @@
 
 - ( NSString *) description {
     
-    return [NSString stringWithFormat:@"name: %@", self.name];
+    NSLog(@"%@ ", self.name);
+    NSLog(@"%@ ", self.alias);
+    NSLog(@"%@ ", self.metatype);
+    NSLog(@"%ld ", self.age);
+    NSLog(@"%@ ", self.sex);
+    NSLog(@"%ld ", self.money);
+    NSLog(@"%ld ", self.totalKarma);
+    NSLog(@"%ld ", self.currentKarma);
+    NSLog(@"%@ ", self.lifestyle);
+    NSLog(@"%@ ", self.streetCred);
+    NSLog(@"%@ ", self.notoriety);
+    NSLog(@"%@ ", self.publicAwareness);
+    return nil;
     
 }
 
