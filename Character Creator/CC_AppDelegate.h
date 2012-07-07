@@ -53,4 +53,6 @@
 @property (weak) IBOutlet NSTextField *initativePassesAttField;
 @property (weak) IBOutlet NSTextField *magicResonanceAttField;
 
+
+
 @end

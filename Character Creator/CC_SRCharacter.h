@@ -10,6 +10,10 @@
 
 @interface CC_SRCharacter : NSObject
 
+// Variable(s) to store the XML rendition of the character
+@property (strong) NSXMLDocument *xmlDoc;
+//@property (strong) NSMutableDictionary *characterDict;
+
 // Main page - top section property variables
 @property (strong) NSString *name;
 @property (strong) NSString *alias;
@@ -23,5 +27,11 @@
 @property (strong) NSString *streetCred;
 @property (strong) NSString *notoriety;
 @property (strong) NSString *publicAwareness;
+
+// File I/O function prototypes
+- (BOOL)writeToFile:(NSURL *)filename;
+- (NSDictionary *)characterDictionary;
+- (NSString *)characterXML;
+//- (IBAction)saveCharacter:(id)sender;
 
 @end
