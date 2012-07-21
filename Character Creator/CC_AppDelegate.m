@@ -82,12 +82,8 @@
 - (IBAction)debugButton:(id)sender {
     
     // Print the character description. Goes to NSLog
-    //[character description];
-
-    // Call the write to file function.
-    //[character writeToFile:@"test.XML"];
+    [character description];
     
-    [self saveCharacter:nil];
 }
 - (IBAction)saveCharacterClick:(id)sender {
     
@@ -105,19 +101,19 @@
             character.alias = self.aliasField.stringValue;
             break;
         case k_ageField:
-            character.age = self.ageField.stringValue.integerValue;
+            character.age = self.ageField.stringValue;
             break;
         case k_sexField:
             character.sex = self.sexField.stringValue;
             break;
         case k_moneyField:
-            character.money = self.moneyField.stringValue.integerValue;
+            character.money = self.moneyField.stringValue;
             break;
         case k_totalKarmaField:
-            character.totalKarma = self.totalKarmaField.stringValue.integerValue;
+            character.totalKarma = self.totalKarmaField.stringValue;
             break;
         case k_currentKarmaField:
-            character.currentKarma = self.currentKarmaField.stringValue.integerValue;
+            character.currentKarma = self.currentKarmaField.stringValue;
             break;
         case k_lifestyleField:
             character.lifestyle = self.lifestyleField.stringValue;

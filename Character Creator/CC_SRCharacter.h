@@ -18,11 +18,11 @@
 @property (strong) NSString *name;
 @property (strong) NSString *alias;
 @property (strong) NSString *metatype;
-@property NSInteger age;
+@property (strong) NSString *age;
 @property (strong) NSString *sex;
-@property NSInteger money;
-@property NSInteger totalKarma;
-@property NSInteger currentKarma;
+@property (strong) NSString *money;
+@property (strong) NSString *totalKarma;
+@property (strong) NSString *currentKarma;
 @property (strong) NSString *lifestyle;
 @property (strong) NSString *streetCred;
 @property (strong) NSString *notoriety;
