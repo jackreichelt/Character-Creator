@@ -30,6 +30,7 @@
 @synthesize matrixInitiativeAttField = _matrixInitiativeAttField;
 @synthesize initativePassesAttField = _initativePassesAttField;
 @synthesize magicResonanceAttField = _magicResonanceAttField;
+@synthesize MainMenuSave = _MainMenuSave;
 @synthesize charismaAttField = _charismaAttField;
 @synthesize intuitionAttField = _intuitionAttField;
 @synthesize logicAttField = _logicAttField;
@@ -86,6 +87,11 @@
     // Call the write to file function.
     //[character writeToFile:@"test.XML"];
     
+    [self saveCharacter:nil];
+}
+- (IBAction)saveCharacterClick:(id)sender {
+    
+    // Call the write to file function.
     [self saveCharacter:nil];
 }
 

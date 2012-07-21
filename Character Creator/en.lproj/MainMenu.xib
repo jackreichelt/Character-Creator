@@ -1319,6 +1319,7 @@
 							<string key="NSFrame">{{13, 16}, {774, 578}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView" ref="997636801"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<array class="NSMutableArray" key="NSTabViewItems">
 								<object class="NSTabViewItem" id="615266892">
@@ -2893,6 +2894,7 @@
 												<string key="NSFrame">{{3, 9}, {82, 32}}</string>
 												<reference key="NSSuperview" ref="997636801"/>
 												<reference key="NSWindow"/>
+												<reference key="NSNextKeyView"/>
 												<string key="NSReuseIdentifierKey">_NS:9</string>
 												<bool key="NSEnabled">YES</bool>
 												<object class="NSButtonCell" key="NSCell" id="668250227">
@@ -3185,14 +3187,6 @@
 						<reference key="destination" ref="708854459"/>
 					</object>
 					<int key="connectionID">357</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">saveDocument:</string>
-						<reference key="source" ref="1014"/>
-						<reference key="destination" ref="1023925487"/>
-					</object>
-					<int key="connectionID">362</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
@@ -3595,6 +3589,14 @@
 					<int key="connectionID">535</int>
 				</object>
 				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="649796088"/>
+						<reference key="destination" ref="976324537"/>
+					</object>
+					<int key="connectionID">1031</int>
+				</object>
+				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
 						<string key="label">addFontTrait:</string>
 						<reference key="source" ref="755631768"/>
@@ -3881,6 +3883,22 @@
 						<reference key="destination" ref="1046456340"/>
 					</object>
 					<int key="connectionID">1012</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">MainMenuSave</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="1023925487"/>
+					</object>
+					<int key="connectionID">1032</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">saveCharacter:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="1023925487"/>
+					</object>
+					<int key="connectionID">1033</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -10018,7 +10036,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">1030</int>
+			<int key="maxID">1033</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -10026,6 +10044,7 @@
 					<string key="className">CC_AppDelegate</string>
 					<string key="superclassName">NSObject</string>
 					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="MainMenuSave">NSMenuItem</string>
 						<string key="ageField">NSTextField</string>
 						<string key="agilityAttField">NSTextField</string>
 						<string key="aliasField">NSTextField</string>
@@ -10057,6 +10076,10 @@
 						<string key="window">NSWindow</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="MainMenuSave">
+							<string key="name">MainMenuSave</string>
+							<string key="candidateClassName">NSMenuItem</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="ageField">
 							<string key="name">ageField</string>
 							<string key="candidateClassName">NSTextField</string>

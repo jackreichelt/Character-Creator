@@ -30,8 +30,8 @@
 
 // File I/O function prototypes
 - (BOOL)writeToFile:(NSURL *)filename;
-- (NSDictionary *)characterDictionary;
-- (NSString *)characterXML;
+//- (NSDictionary *)characterDictionary;
+//- (NSString *)characterXML;
 //- (IBAction)saveCharacter:(id)sender;
 
 @end

@@ -43,7 +43,7 @@
     
 }
 
-- (NSDictionary *)characterDictionary {
+/*- (NSDictionary *)characterDictionary {
     // create a mutable dictionary object
     NSMutableDictionary *characterDict = [[NSMutableDictionary alloc] init];
     
@@ -68,9 +68,9 @@
     //[characterDict setObject:[NSNumber numberWithFloat:self.floatVar forKey:@"FloatingPointNumber"];
       
     return characterDict;
-}
+}*/
 
-- (NSString *)characterXML {
+/*- (NSString *)characterXML {
     NSDictionary *dict = [self characterDictionary];
     if (!dict) return nil;
     
@@ -85,7 +85,7 @@
     
     NSString *plistString = [[NSString alloc] initWithData:plist encoding:NSUTF8StringEncoding];
     return plistString;
-}
+}*/
 
 - (BOOL)writeToFile:(NSURL *)fileName {
     

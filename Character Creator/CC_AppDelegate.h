@@ -53,6 +53,7 @@
 @property (weak) IBOutlet NSTextField *initativePassesAttField;
 @property (weak) IBOutlet NSTextField *magicResonanceAttField;
 
+@property (weak) IBOutlet NSMenuItem *MainMenuSave;
 
 
 @end
